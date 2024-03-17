@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33122.133
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarketTradeApplication", "MarketTradeApplication\MarketTradeApplication.csproj", "{38DCE5F4-5261-4A8E-86F0-5786EE1AF2ED}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{38DCE5F4-5261-4A8E-86F0-5786EE1AF2ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38DCE5F4-5261-4A8E-86F0-5786EE1AF2ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38DCE5F4-5261-4A8E-86F0-5786EE1AF2ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38DCE5F4-5261-4A8E-86F0-5786EE1AF2ED}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {475C4D1B-B62C-488B-B560-8B190CB21EBE}
+	EndGlobalSection
+EndGlobal

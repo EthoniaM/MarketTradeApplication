@@ -1,0 +1,51 @@
+﻿@model LoginVM
+@{
+    ViewData["Title"] = "Login";
+}
+
+    <div class="col-md-4 mx-auto rounded border p-3">
+        <section>
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <form method="post" asp-action="Login" asp-controller="Account">
+
+                <div class="form-floating">
+                    <input asp-for="UserName" id="username" class="form-control" autocomplete="username" aria-required="true" />
+                <label asp-for="UserName" class="form-label"> <i class="fa-solid fa-user"></i>UserName</label>
+                <span asp-validation-for="UserName" class="text-danger"></span>
+                </div>
+                <br />
+                <div class="form-floating">
+                 <input asp-for="Password" id="password" class="form-control" autocomplete="current-password" aria-required="true" />
+                <label asp-for="Password" class="form-label"><i class="fa-solid fa-lock"></i>Password</label>
+                    <span asp-validation-for="Password" class="text-danger"></span>
+                </div>
+                <br />
+                <div class="mb-3">
+                    <label>
+                        <input type="checkbox" id="rememberMe" asp-for="RememberMe"/>Remember me
+                    </label>
+                </div>
+                <div>
+                    <button id="btnLogin" type="submit" class="w-100 btn-block m-2 btn-primary">Log in</button>
+                </div>
+            <br />
+            <div>
+                <p>
+
+                    Dont have an account?      <a href="/Account/Register">Sign up</a>
+                </p>
+                <p>
+                    <a asp-action="ForgotPassword" asp-controller="Account">Forgot your password?</a>
+                </p>
+            </div>
+              
+            </form>
+        </section>
+    </div>
+
+
+    @section Scripts {
+        <partial name="_ValidationScriptsPartial" />
+    }
+
+
